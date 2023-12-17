@@ -1,0 +1,730 @@
+@font-face {
+    font-family: 'Post No Bills Jaffna Regular';
+    font-style: normal;
+    font-weight: 700px;
+    src: url("fonts/post-no-bills-jaffna/PostNoBillsJaffna-Regular.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400px;
+    src: url("fonts/pt-sans/PTSans-Regular.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400px, 700px;
+    src: url("fonts/playfair-display/PlayfairDisplay-Regular.woff2") format("woff2")
+}    
+
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #000;
+  --second-bg-color:#0F0F0F;
+  --main-text-color:#FFF;
+  --main-width: 1920px;
+  --content-width: 987px;
+}
+
+     /*1.ШАПКА САЙТА*/
+
+        /*1.1. ИНФО СЕКЦИЯ*/
+
+
+.header__wrapper {
+    background-color: var(--main-bg-color);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+}
+
+.wrapper__content {
+    background-color: var(--second-bg-color);
+    font-family: 'Post No Bills Jaffna Regular';
+    
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--content-width);
+    margin: 0 auto;
+    background-color: var(--main-bg-color);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section {
+    gap: 10px;
+}
+
+
+.info {
+    color: #969696;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+    /*1.2. СЕКЦИЯ НАВИГАЦИИ*/
+
+
+.content {
+    display: flex;
+    width: var(--content-width);
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 40px;
+}
+
+
+a {text-decoration: none;}
+
+.logo {
+    color: var(--main-text-color);
+}
+
+/* .menu__list-item {
+    padding: 30px 40px;
+} */
+
+.menu__list-link {
+    color:  #969696;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 30px 20px;
+    display: inline-block;
+}
+
+.menu__list-link:hover {
+    background-color:var(--main-bg-color);
+}
+
+.icons {
+    display: flex;
+    gap: 40px;
+}
+
+
+/*1.4.СЕКЦИЯ ОПИСАНИЯ КОМПАНИИ*/
+
+
+.header__content {
+    background-image: url(/img/header/bg.jpg);
+    background-position: center;
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 160px;
+    padding-bottom: 154px;
+    background-size: cover;
+    
+}
+
+.header__content-square {
+    width: 320px;
+    height: 320px;
+    border: 4px solid white;
+    padding: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.header__content-square-logo {
+    border-bottom: 2px solid white;
+    font-size: 62px;
+    font-family:'Post No Bills Jaffna Regular';
+    line-height: 52px;
+    margin-bottom: 7px;
+}
+
+
+.header__content-text{
+    width: 730px;
+    text-align: center;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+h2 {
+    font-family: "PT Sans";
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+
+
+/*Первый блок презентации*/
+
+
+
+
+.presentation {
+    width: var(--main-width);
+    display: flex;
+    
+}
+
+.presentation__watchs {
+    max-width: 1040px;
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+}
+
+.presentation__watchs-season {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.season {
+    font-size: 36px;
+    font-family: 'Playfair Display';
+    font-weight: 700px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin-top: -50px;
+}
+
+.season::after {
+    content:"";     
+    position: absolute;
+    bottom: -40px;;
+    left: 50%;
+    width: 60%;
+    height: 1px;
+    margin-left: -30%;
+    background: var(--main-text-color);
+    margin-top: 50px;
+}
+
+.watch-cells-block-one {
+    display: flex;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+
+.watchs {
+    width: 260px;
+    height: 325px;
+    background-color:#191B1C;
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.watchs-name-block-one {
+    width: 878px;
+    font-family: 'Playfair Display';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 34px;
+    margin-right: 200px;
+}
+
+.watch-name_cost{
+    color: var(--main-text-color);
+}
+
+
+.presentation__new-collection {
+    min-width: 880px;
+    height: 730px;
+    background-image: url(img/content/Rectangle\ 8.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-collection-title {
+    color: var(--main-text-color);
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 400px;
+    position: relative;
+    
+}
+
+.new-collection-title:after {
+    content:"";     
+    position: absolute;
+    bottom: -30px;;
+    left: 50%;
+    width: 120px;
+    height: 1px;
+    margin-left: -15%;
+    background: var(--main-text-color);
+}
+
+.wrap-catalog-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 60px;
+}
+
+.catalog-button {
+    color: var(--main-text-color);
+    font-family: 'PT Sans';
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-top: 595px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    border: 1px solid var(--main-text-color);
+    padding: 12px 35px;;
+}
+
+
+
+     /*Второй блок презентации*/
+
+
+.collection-description {
+    display: flex;
+    min-width: 1920px;
+}
+
+.img-costume {
+    background-image: url(img/content/Rectangle\ 9.png);
+    background-size: cover;
+    min-width: 880px;
+    min-height: 602px;
+}
+
+
+.presentation__old-collection {
+    min-width: 1030px;
+    min-height: 602px;
+    background-color: var(--main-bg-color);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.old-collection-title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.old-collection-title:after {
+    content:"";     
+    position: absolute;
+    bottom: -35px;
+    left: 70%;
+    width: 120px;
+    height: 1px;
+    margin-left: -40%;
+    background: var(--main-text-color);
+}
+
+
+.collection-description-text {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    width: 471px;
+    height: 173px;
+    display: flex;
+    color: var(--main-text-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 80px;
+}
+
+
+.wrap-collection-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 73px;
+}
+
+
+.collection-button {
+    color:var(--main-text-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'PT Sans';
+    border: 1px solid var(--main-text-color);
+    padding: 12px 28px;
+}
+
+
+
+
+
+    /*Блок с новыми поступлениями*/
+
+
+.new-arrivals {
+    background-color: var(--main-bg-color);
+    min-width: 1920px;
+    height: 1289px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.new-arrivals-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.new-arrivals-title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arrivals-title::after {
+    content:"";     
+    position: absolute;
+    bottom: -40px;
+    left: 75%;
+    width: 120px;
+    height: 1px;
+    margin-left: -40%;
+    background: var(--main-text-color);
+}
+
+.watch-cells-block-two {
+    display: flex;
+    gap: 23px;
+}
+
+.watchs-name-block-two {
+    width: 1100px;
+    font-family: 'Playfair Display';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin-right: 300px;
+    margin-left: 215px;
+    gap: 159px;
+}
+
+.watch-block-three {
+    display: flex;
+    flex-direction: column;
+}
+
+.watch-cells-block-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 23px;
+}
+
+.watchs-name-block-three {
+    width: 1100px;
+    font-family: 'Playfair Display';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin-right: 300px;
+    margin-left: 215px;
+    gap: 159px;
+}
+
+
+
+
+
+
+    /*Блок с брендами*/
+
+
+.our_brands {
+    min-width: 1920px;
+    height: 362px;
+    background-color: #0F0F0F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our_brand-title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 270px;
+    margin-bottom: 50px;
+}
+
+.our_brand-title::after {
+    content:"";     
+    position: absolute;
+    bottom: -40px;
+    left: 68%;
+    width: 120px;
+    height: 1px;
+    margin-left: -40%;
+    margin-bottom: 5px;
+    background: #fff;
+}
+
+
+.coco-fine-jewelry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 300px;
+    padding-top: 25px;
+}
+
+
+
+   /*Подвал сайта*/
+
+
+
+
+.footer {
+    min-width: 1920px;
+    height: 400px;
+    background-image: url(img/footer/Rectangle\ 15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main-text-color);
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    gap: 300px;
+    padding-top: 10px;
+    
+
+}
+
+
+.information-block {
+    display: flex;
+}
+
+.about_store_description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 350px;
+    margin-left: 50px;
+}
+
+.about_store_description-text {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    width: 471px;
+    height: 173px;
+    display: flex;
+    color: var(--main-text-color);
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+
+.categories_cells {
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+}
+
+
+
+.categories_cells-one {
+    display: flex;
+    gap: 20px;
+    color:var(--main-text-color);
+    margin-top: 40px;
+}   
+
+
+.watch-text, .bracelet-text, .belt-text {
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    padding: 10px 20px;
+}
+
+
+.categories_cells-two {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.jewelry-text, .cufflink-text {
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    padding: 10px 20px;
+}
+
+
+
+.newsletter-block-description {
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.newsletter-block-description-text {
+    color: var(--main-text-color);
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 20px;
+}
+
+form {
+    margin-left: 167px;
+    margin-top: 34px;
+    display: flex;
+}
+
+input {
+    width: 230px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+::placeholder {
+    color: var(--main-text-color);
+    padding-left: 15px;
+}
+
+
+.subscribe {
+    border-radius: 0%;
+    border-style: solid;
+    padding: 12px 20px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
